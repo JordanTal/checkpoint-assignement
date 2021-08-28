@@ -1,0 +1,14 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: publish
+  image: plugins/docker
+  settings:
+    username: kevinbacon
+    password: pa55word
+    repo: foo/bar
+    tags:
+    - 1.0.0
+    - 1.0
